@@ -1,0 +1,16 @@
+title: a-horse-is-a-horse-of
+description: Learning GitHub Learning Labs
+template:
+  repo: a-horse-is-a-horse-of-template
+  name: a-horse-is-a-horse-of
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
